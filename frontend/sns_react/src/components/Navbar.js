@@ -21,7 +21,7 @@ const Navbar = (props) => {
     const classes = useStyles();
     const Logout = () => event => {
         props.cookies.remove('current-token');
-        window.location.href('/')
+        window.location.href='/'
     }
 
 

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route, BrowserRouter} from 'react-router-dom';
 import Login from './components/Login';
 import { CookiesProvider } from 'react-cookie';
 
@@ -12,8 +12,8 @@ const routing = (
   <React.StrictMode>
   <BrowserRouter>
   <CookiesProvider>
-    <Route path='/' component={Login}/>
-    <Route path='/profiles' component={App}/>
+    <Route exact path='/' component={Login}/>
+    <Route exact path='/profiles' component={App}/>
   </CookiesProvider>
   </BrowserRouter>
   </React.StrictMode>
